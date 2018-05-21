@@ -8,11 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
+	
 	@GetMapping("/list")
 	public String userList(Model model) {
 		model.addAttribute("users", "This is the user page!");
 		return "/user/list";
+	}
+	
+	@GetMapping("/form")
+	public String userForm(Model model) {
+		model.addAttribute("userForm");
+		return "/user/form";
 	}
 	
 	@GetMapping("/login")

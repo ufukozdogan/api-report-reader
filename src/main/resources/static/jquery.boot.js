@@ -8,6 +8,16 @@ $(function() {
 	});
 });
 
+function addForm(type) {
+	$.ajax({
+		type : "GET",
+		url : "/apireader/"+type+"/form",
+		success : function(data) {
+			$(".panel-body").html(data);
+		}
+	});	
+}
+
 function fetchList(type){
 	$.ajax({
 		type : "GET",
