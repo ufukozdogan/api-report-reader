@@ -27,3 +27,18 @@ function fetchList(type){
 		}
 	});
 }
+
+function Login() {
+    $.ajax({
+		url: "https://sandbox-reporting.rpdpymnt.com/api/v3/merchant/user/login",// your api url
+		headers: {
+	        'Content-Type': 'application/x-www-form-urlencoded'
+	    },
+		type: "POST",
+		dataType: 'json',
+		data: $("#email,#password").serialize(),
+		success: function(result) {
+		   console.log(result);
+		}
+    });
+ }
