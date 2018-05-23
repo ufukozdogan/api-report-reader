@@ -6,19 +6,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/transaction")
+public class TransactionsController {
 	
 	@GetMapping("/list")
 	public String userList(Model model) {
-		model.addAttribute("users", "This is the user page!");
-		return "/user/list";
+		model.addAttribute("transaction", "This is the transaction list page!");
+		return "/transaction/list";
 	}
 	
 	@GetMapping("/form")
 	public String userForm(Model model) {
-		model.addAttribute("userForm");
-		return "/user/form";
+		model.addAttribute("transactionForm");
+		return "/transaction/form";
 	}
 	
 	@GetMapping("/login")

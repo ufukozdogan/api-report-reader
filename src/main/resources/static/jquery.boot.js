@@ -1,10 +1,10 @@
 $(function() {
-	$("#userList").click(function(){
-		fetchList("user");
+	$("#transactionList").click(function(){
+		fetchList("transaction");
 	});
 	
-	$("#addressList").click(function(){
-		fetchList("address");
+	$("#clientList").click(function(){
+		fetchList("clients");
 	});
 });
 
@@ -36,7 +36,7 @@ function Login() {
 	    },
 		type: "POST",
 		dataType: 'json',
-		data: $("#email,#password").serialize(),
+		data: $("#loginForm").serialize(),
 		success: function(result) {
 		   console.log(result);
 		}

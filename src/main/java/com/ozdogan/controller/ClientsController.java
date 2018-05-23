@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/login")
-public class LoginController {
+@RequestMapping("/clients")
+public class ClientsController {
 	
-	@GetMapping("/page")
-	public String loginPage(Model model) {
-		model.addAttribute("message", "This is the user page!");
-		return "/login/page";
+	@GetMapping("/list")
+	public String addressList(Model model) {
+		model.addAttribute("clients", "This is the clients information page!");
+		return "/clients/list";
 	}
 }

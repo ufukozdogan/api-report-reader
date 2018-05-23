@@ -6,11 +6,11 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<strong>
-			<span class="glyphicon glyphicon-info-sign"></span> Address List
+			<span class="glyphicon glyphicon-info-sign"></span> Transaction List
 		</strong>
 		<div class="pull-right">
-			<a href="javascript:void(0);" onClick="addForm('address')">
-				<span class="glyphicon glyphicon-plus-sign"></span> New Address
+			<a href="javascript:void(0);" onClick="addForm('transaction')">
+				<span class="glyphicon glyphicon-plus-sign"></span> New API Request
 			</a>
 		</div>
 	</div>
@@ -18,22 +18,20 @@
 		<table class="table table-bordered table-condensed table-hover table-striped">
 			<thead>
 				<tr>
-					<th>Country</th>
-					<th>State</th>
-					<th>City</th>
-					<th>User</th>
+					<th>Test Information 1</th>
+					<th>Test Information 2</th>
+					<th>Test Information 3</th>
+					<th>Test Check</th>
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${addresses}" var="address">
 					<tr>
-						<td>Satir1</td>
-						<td>Satir2</td>
-						<td>Satir3</td>
-						<td>Satir4</td>
-						<%-- ${address.userName} --%>
+						<td>TestValue1</td>
+						<td>TestValue2</td>
+						<td>ReallyLongStringThatProvesThisTableRocksHard</td>
+						<td><span class="glyphicon glyphicon-ok"></span></td>
+						<%-- ${user.userName} --%>
 					</tr>
-				</c:forEach>
 			</tbody>
 		</table>
 	</div>

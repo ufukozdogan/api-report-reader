@@ -13,20 +13,20 @@
 	</head>
 	<body>
 		<form id="loginForm">
-	    <table>
-	    <tr>
-	    <td>Email</td>
-	    <td><input id="email" type="text" name="email"></td>
-	    </tr>
-	    <tr>
-	    <td>Password</td>
-	    <td><input id="password" type="password" name="password"></td>
-	    </tr>
-	    <tr>
-	    <td></td>
-	    <td><input type="button" value="login" onclick="Login()"/></td>
-	    </tr>
-	    </table>
+		    <table>
+			    <tr>
+				    <td>E-Mail : </td>
+				    <td><input type="text" name="email"></td>
+			    </tr>
+			    <tr>
+				    <td>Password : </td>
+				    <td><input type="password" name="password"></td>
+			    </tr>
+			    <tr>
+				    <td></td>
+				    <td><input type="button" value="login" onclick="Login()"/></td>
+			    </tr>
+		    </table>
 	    </form>
 	</body>
 </html>

@@ -30,14 +30,9 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="javascript:void(0);">API Report Reader</a>
+					<a class="navbar-brand" href="${path}">API Report Reader</a>
 				</div>
 				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="${path}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-						<li><a href="javascript:void(0);"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-						<li><a href="javascript:void(0);"><span class="glyphicon glyphicon-phone-alt"></span> Contact</a></li>
-					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href="javascript:void(0);" onclick="document.forms['logoutForm'].submit()">Welcome ${pageContext.request.userPrincipal.name} | Logout</a>
@@ -50,19 +45,28 @@
 			<div class="menu navbar navbar-default">
 				<div class="menu-container">
 					<ul class="nav navbar-nav">
-						<li><a href="javascript:void(0);" id="userList"><span class="glyphicon glyphicon-user"></span>User List</a></li>
-						<li><a href="javascript:void(0);" id="addressList"><span class="glyphicon glyphicon-info-sign"></span>Address List</a></li>
+						<li><a href="javascript:void(0);" id="transactionList"><span class="glyphicon glyphicon-info-sign"></span> Transaction List</a></li>
+						<li><a href="javascript:void(0);" id="clientList"><span class="glyphicon glyphicon-user"></span> Clients List</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="container-fluid">
-				<div class="panel-body" style="margin-left: 210px;">
-					<c:forEach begin="0" end="3" varStatus="loop">
+				<div class="panel-body" style="margin-left: 250px;">
 						<div class="col-md-12">
 							<h2>${heading}</h2>
-							<p class="text-justify">${description}</p>
+							<h3><span class="glyphicon glyphicon-leaf"></span> About Application</h3>	
+							<p><span class="glyphicon glyphicon-triangle-right"></span> Main goal of the application is to communicate with an API by sending post requests and receiving response parameters.</p>
+							<p><span class="glyphicon glyphicon-triangle-right"></span> User logs in to the API system with given credentials and afterwards, has full access to the system.</p>
+							<p><span class="glyphicon glyphicon-triangle-right"></span> There are couple of commands that can user make. Such as requesting transaction lists or client information.</p>
 						</div>
-					</c:forEach>
+						<div class="col-md-12">
+							<h3><span class="glyphicon glyphicon-paperclip"></span> What did I use?</h3>	
+							<p><span class="glyphicon glyphicon-ok"></span> Spring Boot</p>
+							<p><span class="glyphicon glyphicon-ok"></span> Bootstrap</p>
+							<p><span class="glyphicon glyphicon-ok"></span> JPA and JSP</p>
+							<p><span class="glyphicon glyphicon-ok"></span> JavaScript</p>
+							<p><span class="glyphicon glyphicon-ok"></span> jQuery and AJAX</p>
+						</div>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@
 			<span class="glyphicon glyphicon-plus-sign"></span> New User
 		</strong>
 	</div>
-	<form:form method="post" class="form-horizontal" action="${path}/user/add" commandName="userForm">
+	<form:form method="post" class="form-horizontal" action="${path}/user/add" commandName="transactionForm">
 		<form:hidden path="id"/>
 		<div class="panel-body">
 			<div class="form-group">

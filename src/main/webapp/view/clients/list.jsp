@@ -6,11 +6,11 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<strong>
-			<span class="glyphicon glyphicon-user"></span> User List
+			<span class="glyphicon glyphicon-user"></span> Client Info
 		</strong>
 		<div class="pull-right">
-			<a href="javascript:void(0);" onClick="addForm('user')">
-				<span class="glyphicon glyphicon-plus-sign"></span> New User
+			<a href="javascript:void(0);" onClick="addForm('clients')">
+				<span class="glyphicon glyphicon-plus-sign"></span> New API Request
 			</a>
 		</div>
 	</div>
@@ -18,22 +18,20 @@
 		<table class="table table-bordered table-condensed table-hover table-striped">
 			<thead>
 				<tr>
-					<th>User ID</th>
-					<th>User Name</th>
-					<th>Password</th>
-					<th>Role</th>
+					<th>Test Information 1</th>
+					<th>Test Information 2</th>
+					<th>Test Information 3</th>
+					<th>Test Information 4</th>
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${users}" var="user">
 					<tr>
-						<td>Satir1</td>
-						<td>Satir2</td>
-						<td>placeholdertextplaceholdertextplaceholdertextplaceholdertextplaceholdertext</td>
-						<td><span class="glyphicon glyphicon-user"></span></td>
-						<%-- ${user.userName} --%>
+						<td>TestValueNumberOne</td>
+						<td>TestValueNumberTwo</td>
+						<td>TestValueNumberThree</td>
+						<td>TestValueNumberFour</td>
+						<%-- ${address.userName} --%>
 					</tr>
-				</c:forEach>
 			</tbody>
 		</table>
 	</div>

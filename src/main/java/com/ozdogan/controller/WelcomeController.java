@@ -9,8 +9,7 @@ public class WelcomeController {
 	
 	@RequestMapping("/")
 	public String welcome(Model model) {
-		model.addAttribute("heading", "Welcome to the Spring Boot application!");
-		model.addAttribute("description", "This application is super good!");
+		model.addAttribute("heading", "API Report Reader Spring Boot Web Application");
 		return "welcome";
 	}
 }

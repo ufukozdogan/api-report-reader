@@ -21,7 +21,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
-                .loginPage("/user/login")
+                .loginPage("/transaction/login")
                 .permitAll()
                 .and()
             .logout()

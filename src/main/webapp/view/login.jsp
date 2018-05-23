@@ -33,7 +33,7 @@
 							<strong>Merchant Login Panel</strong>
 						</div>
 						<div class="panel-body">
-							<form action="${path}/user/login" method="POST" class="form-signin form-horizontal">
+							<form action="${path}/transaction/login" method="POST" class="form-signin form-horizontal">
 								<c:if test="${error != null}">
 									<div class="alert alert-danger centertext">
 										<strong>${error}</strong>
