@@ -2,7 +2,7 @@
 
 # API Report Reader Spring Boot Web Application
 
-# Edit: This project is abondoned and will never be completed. Currently it does nothing and it's just a reminder for me about something special.
+# Edit: This project is abandoned and will never be completed. Currently it does nothing and it's just a reminder for me about something special.
 
 ### About Application
 * Main goal of the application is to communicate with an API. Sending post requests and receiving response parameters.
